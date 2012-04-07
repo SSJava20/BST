@@ -138,7 +138,8 @@ public class BSTTest {
 	private void compare(IBST bst, Map<Integer, Integer> map) {
 		for (Integer key : map.keySet())
 		{
-			assertEquals(map.get(key)*2, bst.get(key));
+			assertEquals(map.get(key), bst.get(key));
+			assertTrue(false);
 		}
 
 	}
