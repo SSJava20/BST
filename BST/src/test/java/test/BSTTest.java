@@ -139,7 +139,6 @@ public class BSTTest {
 		for (Integer key : map.keySet())
 		{
 			assertEquals(map.get(key), bst.get(key));
-			assertTrue(false);
 		}
 
 	}
