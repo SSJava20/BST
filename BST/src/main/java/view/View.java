@@ -23,8 +23,8 @@ import javax.swing.JTree;
 import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
 
+import bst.BST;
 import bst.IBST;
-import bst.IntBST;
 
 public class View {
 
@@ -55,7 +55,7 @@ public class View {
 	}
 
 	private static void fillBST() {
-		bst = new IntBST();
+		bst = new BST();
 		Random random = new Random();
 
 		for (int i = 0; i < 20; i++) {

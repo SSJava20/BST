@@ -9,12 +9,12 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import bst.BST;
 import org.junit.Before;
 import org.junit.Test;
 
 import bst.ConsoleTreeVisitor;
 import bst.IBST;
-import bst.IntBST;
 
 public class BSTTest {
 
@@ -28,7 +28,7 @@ public class BSTTest {
 		map = new LinkedHashMap<Integer, Integer>();
 		notUsedKeys = new ArrayList<Integer>();
 		toRemoveKeys = new ArrayList<Integer>();
-		bst = new IntBST();
+		bst = new BST();
 	}
 
 	public void init() {
