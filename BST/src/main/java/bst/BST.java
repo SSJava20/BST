@@ -53,6 +53,7 @@ public class BST extends IBST
 
     public void add(Integer k, Integer v)
     {
+        int nHeight = 1;
         Node<Integer, Integer> x = root, y = null;
         while (x != null)
         {
@@ -71,6 +72,7 @@ public class BST extends IBST
                 {
                     x = x.right;
                 }
+                nHeight++;
             }
         }
         Node<Integer, Integer> newNode = new Node<Integer, Integer>(k, v);
@@ -88,6 +90,8 @@ public class BST extends IBST
             }
         }
         size++;
+        if(nHeight > height)
+            height = nHeight;
     }
 
     public void remove(Integer k)
@@ -149,6 +153,7 @@ public class BST extends IBST
             x.key = leftMost.key;
             x.value = leftMost.value;
         }
+        size--;
     }
 
     public void traverseAll(ConsoleTreeVisitor visitor)
