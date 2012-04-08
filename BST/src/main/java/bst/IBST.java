@@ -7,7 +7,7 @@ public abstract class IBST implements TreeModel
     int size = 0;
     int height = 0;
 
-    public abstract boolean containsInteger(Integer k);
+    public abstract boolean containsKey(Integer k);
 
     public abstract Integer get(Integer k);
 
@@ -15,7 +15,7 @@ public abstract class IBST implements TreeModel
 
     public abstract void remove(Integer k);
 
-    abstract void traverseAll(ConsoleTreeVisitor visitor);
+    public abstract void traverseAll(ConsoleTreeVisitor visitor);
 
     public int getSize()
     {

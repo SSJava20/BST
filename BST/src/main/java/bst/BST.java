@@ -9,7 +9,7 @@ public class BST extends IBST
 
     private Node<Integer, Integer> root = null;
 
-    public boolean containsInteger(Integer k)
+    public boolean containsKey(Integer k)
     {
         Node<Integer, Integer> x = root;
         while (x != null)
