@@ -2,8 +2,8 @@ package bst;
 
 import javax.swing.tree.TreeModel;
 
-public abstract class IBST implements TreeModel
-{
+public abstract class IBST implements TreeModel {
+
     int size = 0;
     int height = 0;
 
@@ -17,15 +17,11 @@ public abstract class IBST implements TreeModel
 
     public abstract void traverseAll(ConsoleTreeVisitor visitor);
 
-    public int getSize()
-    {
+    public int getSize() {
         return size;
     }
 
-    public int getHeight()
-    {
+    public int getHeight() {
         return height;
     }
-
-
 }
