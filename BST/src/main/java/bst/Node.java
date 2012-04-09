@@ -2,9 +2,9 @@ package bst;
 
 public class Node<T1, T2>
 {
-    T1 key;
+    public T1 key;
     T2 value;
-    Node<T1, T2> left, right;
+    public Node<T1, T2> left, right;
 
     Node(T1 key, T2 value)
     {
@@ -29,5 +29,17 @@ public class Node<T1, T2>
     public String toString()
     {
         return "Key : " + key + " Value : " + value;
+    }
+    
+    public Node getRNode(){
+        return right;
+    }
+    
+    public Node getLNode(){
+        return left;
+    }
+    
+    public T1 getValue(){
+        return key;
     }
 }
